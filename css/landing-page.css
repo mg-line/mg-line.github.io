@@ -169,7 +169,7 @@ header.masthead h1 {
 .about-us {
   padding-top: 7rem;
   padding-bottom: 7rem;
-  background-color: #DAEDFF;
+  background-color: #daedff;
 }
 
 .about-us .note {
@@ -180,7 +180,6 @@ header.masthead h1 {
   position: relative;
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 .about-us .letter-container > img {
@@ -192,6 +191,12 @@ header.masthead h1 {
 .about-us .letter-container .signature {
   position: absolute;
   bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .about-us .letter-container {
+    flex-wrap: wrap;
+  }
 }
 
 .testimonials {
