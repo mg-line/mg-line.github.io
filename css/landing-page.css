@@ -15,7 +15,49 @@ h4,
 h5,
 h6 {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
+  color: #062134;
+}
+
+.nav {
+  background-color: #daedff;
+  padding: 3rem 0;
+}
+
+.nav .nav-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav .header-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.nav .header-links .nav-links .nav-btn {
+  margin: 0 14px;
+  text-decoration: none;
+  color: #062134;
+  font-size: 18px;
+}
+
+.nav .header-links .lang-control {
+  margin-right: 14px;
+}
+
+.nav .header-links .lang-control .lang-icon {
+  width: 30px;
+  margin: 0 4px;
+}
+
+.btn-primary {
+  background-color: #5c697b !important;
+  border-color: #5c697b !important;
 }
 
 header.masthead {
@@ -51,11 +93,12 @@ header.masthead h1 {
   }
 }
 
-.showcase .showcase-text {
-  padding: 3rem;
+.showcase .showcase-line {
+  display: flex;
+  background-color: #6ea4ca;
 }
 
-.showcase .showcase-img {
+.showcase .showcase-line .showcase-img {
   min-height: 30rem;
   background-size: cover;
 }
@@ -87,6 +130,70 @@ header.masthead h1 {
   font-size: 5rem;
 }
 
+.get-quote {
+  padding-top: 7rem;
+  background-color: #DAEDFF;
+}
+
+.get-quote #portdistance-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.offerings {
+  background-color: #DAEDFF;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.offerings .offering-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 616px;
+  max-height: 300px;
+  list-style: none;
+  padding: 0;
+}
+
+.offerings .offering-list li {
+  display: flex;
+  margin: 8px 0;
+}
+
+.offerings .offering-list li > img {
+  margin-right: 10px;
+  height: 15px;
+}
+
+.about-us {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: #DAEDFF;
+}
+
+.about-us .note {
+  padding-top: 4rem;
+}
+
+.about-us .letter-container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-us .letter-container > img {
+  margin-right: 35px;
+  border: 1px solid #000;
+  margin-bottom: 35px;
+}
+
+.about-us .letter-container .signature {
+  position: absolute;
+  bottom: 0;
+}
+
 .testimonials {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -103,24 +210,33 @@ header.masthead h1 {
 
 .call-to-action {
   position: relative;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
-  background-size: cover;
+  background-color: #6ea4ca;
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
 
-.call-to-action .overlay {
-  position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
+.call-to-action .gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.call-to-action .gallery .gallery-image {
+  border: 1px solid #000;
+}
+
+.call-to-action .address {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  background-color: #daedff;
 }

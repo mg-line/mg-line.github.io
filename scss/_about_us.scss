@@ -1,0 +1,27 @@
+.about-us {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: #DAEDFF;
+
+    .note {
+        padding-top: 4rem;
+    }
+
+    .letter-container {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        > img {
+            margin-right: 35px;
+            border: 1px solid #000;
+            margin-bottom: 35px;
+        }
+
+        .signature {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}

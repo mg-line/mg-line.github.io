@@ -9,5 +9,49 @@ h4,
 h5,
 h6 {
   @include body-font;
-  font-weight: 700;
+  font-weight: 400;
+  color: #062134;
+}
+
+.nav {
+  background-color: #daedff;
+  padding: 3rem 0;
+
+  .nav-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .header-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+
+    .nav-links {
+      .nav-btn {
+        margin: 0 14px;
+        text-decoration: none;
+        color: #062134;
+        font-size: 18px;
+      }
+    }
+
+    .lang-control {
+      margin-right: 14px;
+
+      .lang-icon {
+        width: 30px;
+        margin: 0 4px;
+      }
+    }
+  }
+}
+
+.btn-primary {
+  background-color: #5c697b !important;
+  border-color: #5c697b !important;
 }

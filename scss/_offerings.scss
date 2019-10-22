@@ -1,0 +1,25 @@
+.offerings {
+    background-color: #DAEDFF;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    .offering-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 616px;
+        max-height: 300px;
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            margin: 8px 0;
+
+            > img {
+                margin-right: 10px;
+                height: 15px;
+            }
+        }
+    }
+}
