@@ -1,25 +1,33 @@
 .offerings {
-    background-color: #DAEDFF;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+  background-color: #daedff;
+  padding: 7rem 1rem;
 
-    .offering-list {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-width: 616px;
-        max-height: 300px;
-        list-style: none;
-        padding: 0;
+  .offering-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 616px;
+    list-style: none;
+    padding: 0;
 
-        li {
-            display: flex;
-            margin: 8px 0;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 8px 0;
 
-            > img {
-                margin-right: 10px;
-                height: 15px;
-            }
-        }
+      > img {
+        margin-right: 10px;
+        height: 15px;
+      }
     }
+
+    @media (min-width: 768px) {
+      max-height: 300px;
+
+      li {
+          justify-content: flex-start;
+      }
+    }
+  }
 }

@@ -24,6 +24,10 @@ h6 {
   padding: 3rem 0;
 }
 
+.nav .logo {
+  width: 200px;
+}
+
 .nav .nav-container {
   display: flex;
   align-items: flex-end;
@@ -94,7 +98,7 @@ header.masthead h1 {
 }
 
 .showcase .showcase-line {
-  display: flex;
+  display: block;
   background-color: #6ea4ca;
 }
 
@@ -103,8 +107,15 @@ header.masthead h1 {
   background-size: cover;
 }
 
+.showcase .showcase-line .showcase-text {
+  padding: 2rem;
+}
+
 @media (min-width: 768px) {
-  .showcase .showcase-text {
+  .showcase .showcase-line {
+    display: flex;
+  }
+  .showcase .showcase-line .showcase-text {
     padding: 7rem;
   }
 }
@@ -141,9 +152,8 @@ header.masthead h1 {
 }
 
 .offerings {
-  background-color: #DAEDFF;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  background-color: #daedff;
+  padding: 7rem 1rem;
 }
 
 .offerings .offering-list {
@@ -151,19 +161,29 @@ header.masthead h1 {
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 616px;
-  max-height: 300px;
   list-style: none;
   padding: 0;
 }
 
 .offerings .offering-list li {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 8px 0;
 }
 
 .offerings .offering-list li > img {
   margin-right: 10px;
   height: 15px;
+}
+
+@media (min-width: 768px) {
+  .offerings .offering-list {
+    max-height: 300px;
+  }
+  .offerings .offering-list li {
+    justify-content: flex-start;
+  }
 }
 
 .about-us {
@@ -223,13 +243,15 @@ header.masthead h1 {
 .call-to-action .gallery {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
 .call-to-action .gallery .gallery-image {
   border: 1px solid #000;
+  margin: 16px;
 }
 
 .call-to-action .address {
